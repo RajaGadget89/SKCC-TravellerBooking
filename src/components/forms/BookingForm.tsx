@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
@@ -43,7 +45,7 @@ export const BookingForm: React.FC<BookingFormProps> = ({
     setFormData((prev) => ({
       ...prev,
       [section]: {
-        ...prev[section],
+        ...((prev[section] as object) || {}),
         [field]: value,
       },
     }));

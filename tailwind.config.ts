@@ -26,7 +26,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)'],
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
