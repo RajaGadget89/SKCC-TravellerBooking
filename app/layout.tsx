@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { MainLayout } from '@/components/layouts/MainLayout';
 import './globals.css';
 
+// Using Inter as the main font since Geist is not available
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter'
