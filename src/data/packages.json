@@ -1,0 +1,104 @@
+{
+  "packages": [
+    {
+      "id": "thai-cultural-experience",
+      "slug": "thai-cultural-experience",
+      "title": "Thai Cultural Experience",
+      "shortDescription": "Immerse yourself in Thailand's rich culture and traditions",
+      "fullDescription": "Experience the heart of Thailand through its vibrant culture, ancient temples, and warm hospitality. This journey takes you through the most significant cultural landmarks while providing authentic local experiences.",
+      "duration": 7,
+      "price": {
+        "amount": 1299,
+        "currency": "USD",
+        "perPerson": true,
+        "includesTax": true
+      },
+      "images": {
+        "hero": {
+          "url": "/images/packages/thai-cultural-hero.jpg",
+          "alt": "Ancient Thai temple with golden spires",
+          "width": 1920,
+          "height": 1080
+        },
+        "gallery": [
+          {
+            "url": "/images/packages/thai-cultural-1.jpg",
+            "alt": "Traditional Thai dance performance",
+            "width": 800,
+            "height": 600
+          },
+          {
+            "url": "/images/packages/thai-cultural-2.jpg",
+            "alt": "Local market scene",
+            "width": 800,
+            "height": 600
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "temple-visits",
+          "title": "Temple Visits",
+          "description": "Visit ancient temples including Wat Arun and Wat Phra Kaew",
+          "icon": "temple"
+        },
+        {
+          "id": "cooking-class",
+          "title": "Cooking Class",
+          "description": "Learn to cook authentic Thai dishes from local chefs",
+          "icon": "cooking"
+        }
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bangkok",
+          "description": "Welcome to Thailand! Transfer to your hotel and evening orientation.",
+          "activities": [
+            "Airport pickup",
+            "Hotel check-in",
+            "Welcome dinner"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Temple Tour",
+          "description": "Visit the Grand Palace and Wat Phra Kaew",
+          "activities": [
+            "Morning temple visits",
+            "Traditional lunch",
+            "Evening cultural show"
+          ]
+        }
+      ],
+      "included": [
+        "Accommodation",
+        "Daily breakfast",
+        "Local guide",
+        "Transportation",
+        "Entrance fees"
+      ],
+      "excluded": [
+        "International flights",
+        "Travel insurance",
+        "Personal expenses"
+      ],
+      "maxGroupSize": 12,
+      "difficulty": "Easy",
+      "location": {
+        "country": "Thailand",
+        "region": "Central",
+        "coordinates": {
+          "latitude": 13.7563,
+          "longitude": 100.5018
+        }
+      },
+      "season": {
+        "bestTime": ["November", "February"],
+        "weather": "Tropical, warm and humid"
+      },
+      "createdAt": "2024-02-20T00:00:00Z",
+      "updatedAt": "2024-02-20T00:00:00Z"
+    }
+  ]
+} 

@@ -20,6 +20,16 @@
   - Custom component creation
   - Framer Motion for smooth animations
 
+### Typography
+- **Primary Font:** Inter (Google Fonts)
+  - Clean, modern sans-serif font
+  - Excellent readability
+  - Optimized for web use
+- **Monospace Font:** JetBrains Mono (Google Fonts)
+  - Used for code blocks and technical content
+  - High legibility at small sizes
+  - Built-in ligatures support
+
 ### UI/UX Libraries
 - **Component Library:** Headless UI + Custom Components
 - **Icons:** Lucide React (lightweight and modern)

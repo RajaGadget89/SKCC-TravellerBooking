@@ -1,18 +1,63 @@
-export interface TravelPackage {
+export interface PackageImage {
+  url: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
+export interface PackageFeature {
   id: string;
   title: string;
   description: string;
-  price: number;
-  duration: string;
-  location: string;
-  imageUrl: string;
-  features: string[];
-  itinerary: ItineraryDay[];
+  icon?: string;
+}
+
+export interface PackageItinerary {
+  day: number;
+  title: string;
+  description: string;
+  activities: string[];
+}
+
+export interface PackagePrice {
+  amount: number;
+  currency: string;
+  perPerson: boolean;
+  includesTax: boolean;
+}
+
+export interface TravelPackage {
+  id: string;
+  slug: string;
+  title: string;
+  shortDescription: string;
+  fullDescription: string;
+  duration: number; // in days
+  price: PackagePrice;
+  images: {
+    hero: PackageImage;
+    gallery: PackageImage[];
+  };
+  features: PackageFeature[];
+  itinerary: PackageItinerary[];
   included: string[];
   excluded: string[];
   maxGroupSize: number;
   difficulty: 'Easy' | 'Moderate' | 'Challenging';
-  category: 'Adventure' | 'Cultural' | 'Relaxation' | 'Family';
+  location: {
+    country: string;
+    region: string;
+    coordinates?: {
+      latitude: number;
+      longitude: number;
+    };
+  };
+  season: {
+    bestTime: string[];
+    weather: string;
+  };
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface ItineraryDay {
