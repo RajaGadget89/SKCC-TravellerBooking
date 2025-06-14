@@ -1,25 +1,13 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import { Inter } from 'next/font/google';
 import { MainLayout } from '@/components/layouts/MainLayout';
 import './globals.css';
 
-// Import Geist Sans and Geist Mono using next/font/local
-const geist = localFont({
-  src: [
-    { path: '../public/fonts/Geist-Regular.woff2', weight: '400', style: 'normal' },
-    { path: '../public/fonts/Geist-Bold.woff2', weight: '700', style: 'normal' },
-  ],
-  variable: '--font-geist-sans',
+// Use Inter font as a fallback since Geist is not available in Google Fonts
+const inter = Inter({
+  subsets: ['latin'],
   display: 'swap',
-});
-
-const geistMono = localFont({
-  src: [
-    { path: '../public/fonts/GeistMono-Regular.woff2', weight: '400', style: 'normal' },
-    { path: '../public/fonts/GeistMono-Bold.woff2', weight: '700', style: 'normal' },
-  ],
-  variable: '--font-geist-mono',
-  display: 'swap',
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -33,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${geist.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} antialiased`}>
       <body>
         <MainLayout>{children}</MainLayout>
       </body>
